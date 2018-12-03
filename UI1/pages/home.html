@@ -1,0 +1,15 @@
+{%extends 'layout.html'%}
+{%block content%}
+    {% for i in data%}
+<article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+            <a class="mr-2" href="#">{{ i.name }}</a>
+            <small class="text-muted">{{ i.rollno }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ i.email }}</a></h2>
+            <p class="article-content">{{ i.password }}</p>
+        </div>
+</article>
+    {% endfor%}
+{%endblock content%}
